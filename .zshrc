@@ -225,6 +225,10 @@ alias bc='bc -l'
 
 alias firefox='firefox-nightly'
 alias cleanfox='firefox -private -safe-mode'
+
+alias clean='sudo pacman -Sc'
+# List network devices
+alias net='ip link'
 # Faster cd
 
 alias CTF='cd "/home/jl/Dropbox/McGill/CTF"'
