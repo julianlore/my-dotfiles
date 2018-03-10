@@ -237,8 +237,8 @@ exec redshift
 exec --no-startup-id i3-msg 'workspace 1; exec sleep 10 && firefox-nightly'
 exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && thunderbird'
 #exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && pidgin'
-exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && rambox'
-#exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && chromium'
+#exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && rambox'
+exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && chromium'
 #exec --no-startup-id i3-msg 'workspace 3; exec pcmanfm'
 exec --no-startup-id i3-msg 'workspace 3; exec dolphin'
 
