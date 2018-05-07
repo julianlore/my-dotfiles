@@ -195,12 +195,12 @@ bindsym ctrl+Mod1+Down move workspace to output down
 bindsym $mod+c exec dolphin
 bindsym $mod+b exec firefox-nightly
 bindsym $mod+Shift+b exec chromium
-#bindsym $mod+Shift+l exec lollypop
 bindsym $mod+g exec keepassxc
 bindsym $mod+x exec emacs 
 bindsym $mod+p exec pavucontrol
 bindsym $mod+Shift+v exec vlc
 bindsym $mod+Shift+m exec lollypop
+bindsym $mod+Shift+d exec discord
 
 # Brightness settings
 bindsym ctrl+Mod1+1 mode "$light_mode"
