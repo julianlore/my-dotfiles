@@ -200,7 +200,7 @@ bindsym $mod+x exec emacs
 bindsym $mod+p exec pavucontrol
 bindsym $mod+Shift+v exec vlc
 bindsym $mod+Shift+m exec lollypop
-bindsym $mod+Shift+d exec discord
+bindsym $mod+Shift+d exec discord-canary
 
 # Brightness settings
 bindsym ctrl+Mod1+1 mode "$light_mode"
