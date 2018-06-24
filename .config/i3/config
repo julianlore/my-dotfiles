@@ -232,6 +232,8 @@ exec syndaemon -i 0.3 -t -K -R # Disable touchpad for 0.3 seconds on each keypre
 exec redshift
 #exec rclone-browser
 #exec polybar main_bar
+# Autostart notify-osd since the DBus service doesn't seem to do it
+exec /usr/lib/notify-osd/notify-osd
 
 # Specific workspaces
 exec --no-startup-id i3-msg 'workspace 1; exec sleep 10 && firefox-nightly'
