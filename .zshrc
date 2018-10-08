@@ -18,7 +18,7 @@ ZSH_THEME="agnosterzak"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -30,7 +30,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -105,13 +105,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Aliases from bashrc and new ones
-# To cd into my McGill folder
-#alias mcg='cd /home/jl/Dropbox/McGill'
-
-# append to path
-path+=('/home/jl/Dropbox/bin')
-
 # No longer using mons, using xrandr instead
 # To use mons and extend 2nd monitor to right
 #alias eright='mons -e right'
@@ -134,10 +127,6 @@ alias d='xrandr --output eDP1 --output HDMI1 --same-as eDP1'
 alias rl='xrandr --output HDMI1 --rotate left'
 alias rr='xrandr --output HDMI1 --rotate right'
 
-# Cd in dropbox folder
-alias cdrop='cd /home/jl/Dropbox'
-# Repo folder
-alias crepo='cd /home/jl/Dropbox/Repos'
 # Power off quickly
 alias off='systemctl poweroff'
 # Reboot quickly
@@ -155,25 +144,22 @@ alias up='yaourt -Syua --noconfirm'
 alias i3config='vim ~/.config/i3/config'
 alias bashrc='vim ~/.bashrc'
 alias zshrc='vim ~/.zshrc'
+alias zshrc.local='vim ~/.zshrc.local'
+alias zshrclocal='vim ~/.zshrc.local'
 alias .emacs='emacs ~/.emacs'
-
-# Google Drive using gdrivefs
-alias gd='sudo gdfs -o allow_other /var/cache/gdfs.creds /mnt/gdrivefs'
-alias ugd='sudo umount /mnt/gdrivefs'
+alias .emacs.local='emacs ~/.emacs.local'
+alias .emacslocal='emacs ~/.emacs.local'
 
 alias ew='emacs -nw'
 # Tungsten is a wolfram cli interpreter
 alias wolf='tungsten'
 
-# McGill vpn
-alias mvpn='sudo openconnect "securevpn.mcgill.ca"'
-
 # Import PGP key
 alias pimp='gpg --recv-keys'
 
-# Mount and unmount hard drive quickly
-alias hdd='sudo mount /dev/sdb1 ~/Big\ Boi'
-alias uhdd='sudo umount /dev/sdb1'
+# Other SSD partition
+alias ssd='sudo mount /dev/sda3 ~/WSSD'
+alias ussd='sudo umount /dev/sda3'
 
 # List processes by top memory consumption
 alias mem='ps aux --sort -rss'
@@ -193,66 +179,11 @@ alias gdiff='colordiff -u'
 # bc to always use floating point numbers
 alias bc='bc -l'
 
-# # Access folders in pcmanfm quickly, opens a new tab
-# alias CTF='pcmanfm "file:/home/jl/Dropbox/McGill/CTF"'
-# alias ctf='pcmanfm "file:/home/jl/Dropbox/McGill/CTF"'
-# alias repo='pcmanfm "file:/home/jl/Dropbox/Repos"'
-# alias drop='pcmanfm "file:/home/jl/Dropbox"'
-# alias down='pcmanfm "file:/home/jl/Downloads"'
-# alias org='pcmanfm "file:/home/jl/Dropbox/1.Org"'
-# alias mcg='pcmanfm "file:/home/jl/Dropbox/McGill"'
-# alias text='pcmanfm "file:/home/jl/Dropbox/McGill/Textbooks"'
-# alias sem='pcmanfm "file:/home/jl/Dropbox/McGill/Fall 2017"'
-# alias c251='pcmanfm "file:/home/jl/Dropbox/McGill/Fall 2017/COMP 251 - Algorithms & Data Structures"'
-# alias c230='pcmanfm "file:/home/jl/Dropbox/McGill/Fall 2017/COMP 230 - Logic and Computability"'
-# alias c302='pcmanfm "file:/home/jl/Dropbox/McGill/Fall 2017/COMP 302"'
-# alias c310='pcmanfm "file:/home/jl/Dropbox/McGill/Fall 2017/COMP 310"'
-# alias c350='pcmanfm "file:/home/jl/Dropbox/McGill/Fall 2017/COMP 350 - Numerical Analysis"'
-# alias text='pcmanfm "file:/home/jl/Dropbox/McGill/Textbooks"'
-# alias goo='pcmanfm "file:/mnt/gdrivefs"'
-# alias mcr='pcmanfm "file:/home/jl/Dropbox/Repos/McGill-Resources"'
-# alias bin='pcmanfm "file:/home/jl/Dropbox/bin"'
-
-# # Faster cd
-# alias cc251='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 251 - Algorithms & Data Structures"'
-# alias cc230='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 230 - Logic and Computability"'
-# alias cc302='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 302"'
-# alias cc310='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 310"'
-# alias cc350='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 350 - Numerical Analysis"'
-# alias cmcr='cd /home/jl/Dropbox/Repos/McGill-Resources'
-# alias cbin='cd /home/jl/Dropbox/bin'
-# alias cctf='cd /home/jl/Dropbox/McGill/CTF'
-
 alias firefox='firefox-nightly'
 alias cleanfox='firefox -private -safe-mode'
 
 alias clean='sudo pacman -Sc'
 # List network devices
 alias net='ip link'
-# Faster cd
 
-alias CTF='cd "/home/jl/Dropbox/McGill/CTF"'
-alias ctf='cd "/home/jl/Dropbox/McGill/CTF"'
-alias repo='cd "/home/jl/Dropbox/Repos"'
-alias drop='cd "/home/jl/Dropbox"'
-alias down='cd "/home/jl/Downloads"'
-alias org='cd "/home/jl/Dropbox/1.Org"'
-alias mcg='cd "/home/jl/Dropbox/McGill"'
-alias text='cd "/home/jl/Dropbox/McGill/Textbooks"'
-alias sem='cd "/home/jl/Dropbox/McGill/Winter 2018"'
-alias c251='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 251 - Algorithms & Data Structures"'
-alias c230='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 230 - Logic and Computability"'
-alias c302='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 302"'
-alias c310='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 310"'
-alias c350='cd "/home/jl/Dropbox/McGill/Fall 2017/COMP 350 - Numerical Analysis"'
-alias c360='cd "/home/jl/Dropbox/McGill/Winter 2018/COMP 360 - Algorithm Design"'
-alias c424='cd "/home/jl/Dropbox/McGill/Winter 2018/COMP 424 - Artificial Intelligence"'
-alias c540='cd "/home/jl/Dropbox/McGill/Winter 2018/COMP 540 - Matrix Computations"'
-alias m314='cd "/home/jl/Dropbox/McGill/Winter 2018/MATH 314 - Advanced Calculus"'
-alias m324='cd "/home/jl/Dropbox/McGill/Winter 2018/MATH 324 - Statistics"'
-alias text='cd "/home/jl/Dropbox/McGill/Textbooks"'
-alias goo='cd "/mnt/gdrivefs"'
-alias mcr='cd "/home/jl/Dropbox/Repos/McGill-Resources"'
-alias bin='cd "/home/jl/Dropbox/bin"'
-alias snip='cd "/home/jl/.emacs.d/snippets"'
-alias crib='cd "/home/jl/Dropbox/Repos/crib-sheets"'
+source ~/.zshrc.local
