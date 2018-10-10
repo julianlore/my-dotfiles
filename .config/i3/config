@@ -59,7 +59,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec xfce4-terminal
 # kill focused window
 bindsym $mod+q kill
 
@@ -220,10 +220,12 @@ mode "$light_mode" {
 # Opening certain directories with pcmanfm
 #bindsym ctrl+Mod1+h exec pcmanfm "file:/home/jl"
 
+bindsym ctrl+Mod1+t exec xfce4-terminal --drop-down
+
 # Autostart
 exec nm-applet
 exec dropbox
-exec tilda
+exec xfce4-terminal --drop-down
 exec shutter --min_at_startup
 #exec feh --bg-scale /home/jl/Downloads/hidden_constellation_by_kpekep-dbkcvjk.png
 exec feh --bg-scale "/home/jl/i3wm-themer/themes/Colors/Colors.png" 
