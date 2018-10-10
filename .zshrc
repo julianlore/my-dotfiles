@@ -191,4 +191,7 @@ tm='tmux attach-session -t'
 tmls='tmux list-sessions'
 tmk='tmux kill-session -t'
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 source ~/.zshrc.local
