@@ -118,7 +118,7 @@ alias eleft='xrandr --auto --output HDMI1 --primary --left-of eDP1'
 alias p='xrandr --output HDMI1 --off'
 # Only secondary screen
 #alias s='mons -s'
-alias s='xrandr --output eDP1 --off'
+alias sc='xrandr --output eDP1 --off'
 # Duplicate screens
 #alias d='mons -d'
 alias d='xrandr --output eDP1 --output HDMI1 --same-as eDP1'
@@ -185,5 +185,13 @@ alias cleanfox='firefox -private -safe-mode'
 alias clean='sudo pacman -Sc'
 # List network devices
 alias net='ip link'
+
+# quick re-source
+alias s='source ~/.zshrc'
+
+# tmux aliases
+tm='tmux attach-session -t'
+tmls='tmux list-sessions'
+tmk='tmux kill-session -t'
 
 source ~/.zshrc.local
