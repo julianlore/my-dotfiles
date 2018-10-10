@@ -1,0 +1,6 @@
+[submodule ".tmux"]
+	path = .tmux
+	url = https://github.com/gpakosz/.tmux.git
+[submodule "i3wm-themer"]
+	path = i3wm-themer
+	url = https://github.com/unix121/i3wm-themer.git
