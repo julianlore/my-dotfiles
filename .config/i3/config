@@ -199,6 +199,7 @@ bindsym $mod+g exec keepassxc
 bindsym $mod+x exec emacs 
 bindsym $mod+p exec pavucontrol
 bindsym $mod+Shift+v exec vlc
+bindsym $mod+Shift+x exec virtualbox
 bindsym $mod+Shift+m exec lollypop
 bindsym $mod+Shift+d exec discord-canary
 
