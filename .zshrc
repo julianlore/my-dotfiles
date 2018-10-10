@@ -62,12 +62,7 @@ plugins=(git sudo dirhistory alias-tips archlinux)
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-	export EDITOR='emacs'
-else
-	export EDITOR='vim'
-fi
+export EDITOR='emacs'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -140,17 +135,19 @@ alias up='yaourt -Syua --noconfirm'
 # Suspend
 #alias h ='exec systemctl suspend && i3lock'
 
+alias ew='emacs -nw'
+alias e='emacs'
+
 # To quickly edit configs
-alias i3config='vim ~/.config/i3/config'
-alias bashrc='vim ~/.bashrc'
-alias zshrc='vim ~/.zshrc'
-alias zshrc.local='vim ~/.zshrc.local'
-alias zshrclocal='vim ~/.zshrc.local'
+alias i3config='ew ~/.config/i3/config'
+alias bashrc='ew ~/.bashrc'
+alias zshrc='ew ~/.zshrc'
+alias zshrc.local='ew ~/.zshrc.local'
+alias zshrclocal='ew ~/.zshrc.local'
 alias .emacs='emacs ~/.emacs'
 alias .emacs.local='emacs ~/.emacs.local'
 alias .emacslocal='emacs ~/.emacs.local'
 
-alias ew='emacs -nw'
 # Tungsten is a wolfram cli interpreter
 alias wolf='tungsten'
 
