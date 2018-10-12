@@ -187,6 +187,7 @@ alias net='ip link'
 alias s='source ~/.zshrc'
 
 # quick exit
+alias x='exit'
 
 # tmux aliases
 alias tm='tmux attach-session -t'
