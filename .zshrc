@@ -186,11 +186,14 @@ alias net='ip link'
 # quick re-source
 alias s='source ~/.zshrc'
 
-# tmux aliases
-tm='tmux attach-session -t'
-tmls='tmux list-sessions'
-tmk='tmux kill-session -t'
+# quick exit
 
+# tmux aliases
+alias tm='tmux attach-session -t'
+alias tmls='tmux list-sessions'
+alias tmk='tmux kill-session -t'
+
+# History with Ctrl+R
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
