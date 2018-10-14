@@ -198,4 +198,7 @@ alias tmk='tmux kill-session -t'
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
+# Show size of git repo
+alias gdu='git count-objects -vH'
+
 source ~/.zshrc.local
