@@ -1,0 +1,11 @@
+[Unit]
+Description=Reset brightness after waking up from sleep
+After=suspend.target
+
+[Service]
+User=jl
+Type=simple
+ExecStart=/usr/bin/light -S 15
+
+[Install]
+WantedBy=suspend.target
