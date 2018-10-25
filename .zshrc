@@ -189,6 +189,9 @@ alias s='source ~/.zshrc'
 # quick exit
 alias x='exit'
 
+alias st='startx'
+alias sn='nvidia-xrun'
+
 # tmux aliases
 alias tm='tmux attach-session -t'
 alias tmls='tmux list-sessions'
