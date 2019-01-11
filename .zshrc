@@ -204,4 +204,11 @@ bindkey '^R' history-incremental-search-backward
 # Show size of git repo
 alias gdu='git count-objects -vH'
 
+# Makefile aliases
+alias m='make'
+# make with number of core parallel jobs
+alias mj="m -j `nproc`"
+alias mc='m -C'
+alias mjc='mj -C'
+
 source ~/.zshrc.local
