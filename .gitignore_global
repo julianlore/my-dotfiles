@@ -230,3 +230,4 @@ TSWLatexianTemp*
 # Custom things
 # Ignore Emacs files (files that end with a tilde)
 *~
+\#*\#
