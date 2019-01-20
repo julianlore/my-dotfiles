@@ -147,6 +147,7 @@ alias zshrclocal='ew ~/.zshrc.local'
 alias .emacs='emacs ~/.emacs'
 alias .emacs.local='emacs ~/.emacs.local'
 alias .emacslocal='emacs ~/.emacs.local'
+alias .emacs.d='cd ~/.emacs.d'
 
 # Tungsten is a wolfram cli interpreter
 alias wolf='tungsten'
