@@ -212,4 +212,12 @@ alias mj="m -j `nproc`"
 alias mc='m -C'
 alias mjc='mj -C'
 
+# tar aliases
+# Extract + decomp
+alias tare='tar xvzf'
+# Compress
+alias tarc='tar cvzf'
+# Max compression
+alias tarcc='env GZIP=-9 tarc'
+
 source ~/.zshrc.local
