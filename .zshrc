@@ -130,7 +130,7 @@ alias reboot='systemctl reboot'
 alias push='git push -u origin master'
 
 # Update quickly
-alias up='yaourt -Syua --noconfirm'
+alias up='yay'
 
 # Suspend
 #alias h ='exec systemctl suspend && i3lock'
