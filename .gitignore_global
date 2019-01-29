@@ -231,3 +231,4 @@ TSWLatexianTemp*
 # Ignore Emacs files (files that end with a tilde)
 *~
 \#*\#
+.Rhistory

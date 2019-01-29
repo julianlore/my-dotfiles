@@ -129,9 +129,6 @@ alias reboot='systemctl reboot'
 # Push using git quickly to master
 alias push='git push -u origin master'
 
-# Update quickly
-alias up='yay'
-
 # Suspend
 #alias h ='exec systemctl suspend && i3lock'
 
