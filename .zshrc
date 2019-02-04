@@ -215,6 +215,6 @@ alias tare='tar xvzf'
 # Compress
 alias tarc='tar cvzf'
 # Max compression
-alias tarcc='env GZIP=-9 tarc'
+alias tarcc='env GZIP=-9 tar cvzf'
 
 source ~/.zshrc.local
