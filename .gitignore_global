@@ -232,4 +232,5 @@ TSWLatexianTemp*
 *~
 \#*\#
 .Rhistory
+.RData
 octave-workspace
