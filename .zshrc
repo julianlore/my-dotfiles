@@ -217,4 +217,7 @@ alias tarc='tar cvzf'
 # Max compression
 alias tarcc='env GZIP=-9 tar cvzf'
 
+# Matlab
+alias ml='matlab -nodesktop -nodisplay -nosplash'
+
 source ~/.zshrc.local
