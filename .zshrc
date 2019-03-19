@@ -202,6 +202,9 @@ bindkey '^R' history-incremental-search-backward
 # Show size of git repo
 alias gdu='git count-objects -vH'
 
+# Delete all merged branches that aren't master
+alias grmb="git fetch -p && git branch --merged | grep -v 'master' | xargs git branch -d"
+
 # Makefile aliases
 alias m='make'
 # make with number of core parallel jobs
