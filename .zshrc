@@ -174,7 +174,6 @@ alias gdiff='colordiff -u'
 # bc to always use floating point numbers
 alias bc='bc -l'
 
-alias firefox='firefox-nightly'
 alias cleanfox='firefox -private -safe-mode'
 
 alias clean='yay -Sc'
