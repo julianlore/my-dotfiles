@@ -126,8 +126,6 @@ alias rr='xrandr --output HDMI1 --rotate right'
 alias off='systemctl poweroff'
 # Reboot quickly
 alias reboot='systemctl reboot'
-# Push using git quickly to master
-alias push='git push -u origin master'
 
 # Suspend
 #alias h ='exec systemctl suspend && i3lock'
@@ -202,7 +200,7 @@ bindkey '^R' history-incremental-search-backward
 alias gdu='git count-objects -vH'
 
 # Delete all merged branches that aren't master
-alias grmb="git fetch -p && git branch --merged | grep -v 'master' | xargs git branch -d"
+alias grmb="git fetch -p && git branch --merged | grep -v '*\|master' | xargs git branch -d"
 
 # Makefile aliases
 alias m='make'
