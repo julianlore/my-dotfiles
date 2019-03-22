@@ -202,6 +202,9 @@ alias gdu='git count-objects -vH'
 # Delete all merged branches that aren't master
 alias grmb="git fetch -p && git branch --merged | grep -v '*\|master' | xargs git branch -d"
 
+# Push, setting upstream to current branch
+alias gpsu='git rev-parse --abbrev-ref HEAD | xargs git push --set-upstream origin'
+
 # Makefile aliases
 alias m='make'
 # make with number of core parallel jobs
