@@ -221,6 +221,6 @@ alias tarc='tar cvzf'
 alias tarcc='env GZIP=-9 tar cvzf'
 
 # Matlab
-alias ml='matlab -nodesktop -nodisplay -nosplash'
+alias ml='matlab -nodesktop -nosplash'
 
 source ~/.zshrc.local
