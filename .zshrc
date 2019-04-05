@@ -223,4 +223,9 @@ alias tarcc='env GZIP=-9 tar cvzf'
 # Matlab
 alias ml='matlab -nodesktop -nosplash'
 
+# Docker aliases
+alias dockerlsi='_ docker images -a --format "{{.Repository}}:{{.Tag}} {{.ID}}"'
+alias dockerlsc='_ docker ps -a -q'
+
+
 source ~/.zshrc.local
