@@ -1,6 +1,6 @@
 # tmux plugin stuff
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOQUIT=false
+# ZSH_TMUX_AUTOSTART=true
+# ZSH_TMUX_AUTOQUIT=false
 # Oh-my-zsh stuff
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -55,7 +55,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux tmuxinator vi-mode emacs last-working-dir web-search)
+plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux tmuxinator vi-mode last-working-dir web-search)
 
 
 # User configuration
@@ -65,7 +65,8 @@ plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='emacs'
+export EDITOR='emacsclient -c -a emacs'
+export VISUAL='emacsclient -c -a emacs'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -133,18 +134,18 @@ alias reboot='systemctl reboot'
 # Suspend
 #alias h ='exec systemctl suspend && i3lock'
 
-# alias ew='emacs -nw'
-alias e='emacs'
+alias ew='emacsclient -t'
+alias e='emacsclient -c -a emacs'
 
 # To quickly edit configs
-alias i3config='e ~/.config/i3/config'
-alias bashrc='e ~/.bashrc'
-alias zshrc='e ~/.zshrc'
-alias zshrc.local='e ~/.zshrc.local'
-alias zshrclocal='e ~/.zshrc.local'
-alias .emacs='emacs ~/.emacs'
-alias .emacs.local='emacs ~/.emacs.local'
-alias .emacslocal='emacs ~/.emacs.local'
+alias i3config='ew ~/.config/i3/config'
+alias bashrc='ew ~/.bashrc'
+alias zshrc='ew ~/.zshrc'
+alias zshrc.local='ew ~/.zshrc.local'
+alias zshrclocal='ew ~/.zshrc.local'
+alias .emacs='e ~/.emacs'
+alias .emacs.local='e ~/.emacs.local'
+alias .emacslocal='e ~/.emacs.local'
 alias .emacs.d='cd ~/.emacs.d'
 
 # Tungsten is a wolfram cli interpreter
