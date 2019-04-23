@@ -1,3 +1,6 @@
+# tmux plugin stuff
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOQUIT=false
 # Oh-my-zsh stuff
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -52,7 +55,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo dirhistory alias-tips archlinux)
+plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux tmuxinator vi-mode emacs last-working-dir web-search)
 
 
 # User configuration
@@ -130,15 +133,15 @@ alias reboot='systemctl reboot'
 # Suspend
 #alias h ='exec systemctl suspend && i3lock'
 
-alias ew='emacs -nw'
+# alias ew='emacs -nw'
 alias e='emacs'
 
 # To quickly edit configs
-alias i3config='ew ~/.config/i3/config'
-alias bashrc='ew ~/.bashrc'
-alias zshrc='ew ~/.zshrc'
-alias zshrc.local='ew ~/.zshrc.local'
-alias zshrclocal='ew ~/.zshrc.local'
+alias i3config='e ~/.config/i3/config'
+alias bashrc='e ~/.bashrc'
+alias zshrc='e ~/.zshrc'
+alias zshrc.local='e ~/.zshrc.local'
+alias zshrclocal='e ~/.zshrc.local'
 alias .emacs='emacs ~/.emacs'
 alias .emacs.local='emacs ~/.emacs.local'
 alias .emacslocal='emacs ~/.emacs.local'
