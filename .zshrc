@@ -223,6 +223,7 @@ alias tare='tar xvzf'
 alias tarc='tar cvzf'
 # Max compression
 alias tarcc='env GZIP=-9 tar cvzf'
+alias tarcx='XZ_OPT=-e9 tar cvjf'
 
 # Matlab
 alias ml='matlab -nodesktop -nosplash'
