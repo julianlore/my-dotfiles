@@ -232,5 +232,4 @@ alias ml='matlab -nodesktop -nosplash'
 alias dockerlsi='_ docker images -a --format "{{.Repository}}:{{.Tag}} {{.ID}}"'
 alias dockerlsc='_ docker ps -a -q'
 
-
 source ~/.zshrc.local
