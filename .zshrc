@@ -208,6 +208,7 @@ alias grmb="git fetch -p && git branch --merged | grep -v '*\|master' | xargs gi
 
 # Push, setting upstream to current branch
 alias gpsu='git rev-parse --abbrev-ref HEAD | xargs git push --set-upstream origin'
+alias gsuir='git submodule update --init --recursive'
 
 # Makefile aliases
 alias m='make'
