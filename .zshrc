@@ -233,4 +233,10 @@ alias ml='matlab -nodesktop -nosplash'
 alias dockerlsi='_ docker images -a --format "{{.Repository}}:{{.Tag}} {{.ID}}"'
 alias dockerlsc='_ docker ps -a -q'
 
+# Grep aliases
+# Grep only specific file types
+alias grephs='grep --include \*.hs'
+alias grepc='grep --include \*.h --include \*.c'
+alias grepcpp='grep --include \*.h --include \*.cpp'
+
 source ~/.zshrc.local
