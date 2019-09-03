@@ -227,7 +227,7 @@ bindsym ctrl+Mod1+t exec xfce4-terminal --drop-down
 exec nm-applet
 exec dropbox
 exec xfce4-terminal --drop-down -x tmux
-exec shutter --min_at_startup
+exec flameshot --min_at_startup
 #exec feh --bg-scale /home/jl/Downloads/hidden_constellation_by_kpekep-dbkcvjk.png
 exec feh --bg-scale "/home/jl/i3wm-themer/themes/Colors/Colors.png"
 exec syndaemon -i 0.3 -t -K -R # Disable touchpad for 0.3 seconds on each keypress aside from modifier keys
