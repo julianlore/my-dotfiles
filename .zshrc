@@ -55,7 +55,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux tmuxinator vi-mode last-working-dir web-search)
+plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux tmuxinator vi-mode web-search)
 
 
 # User configuration
