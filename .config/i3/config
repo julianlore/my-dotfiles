@@ -268,6 +268,6 @@ bindsym XF86MonBrightnessUp exec "light -A 1"
 bindsym XF86MonBrightnessDown exec "light -U 1"
 
 # Screenshots!
-bindsym Print exec "maim ~/Dropbox/Screenshots/$(date +%F-%T).png"
+bindsym Print exec "flameshot gui"
 # With delay
 bindsym $mod+Print exec "maim -d 2 ~/Dropbox/Screenshots/$(date +%F-%T).png"
