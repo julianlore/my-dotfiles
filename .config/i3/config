@@ -270,4 +270,4 @@ bindsym XF86MonBrightnessDown exec "light -U 1"
 # Screenshots!
 bindsym Print exec "flameshot gui"
 # With delay
-bindsym $mod+Print exec "maim -d 2 ~/Dropbox/Screenshots/$(date +%F-%T).png"
+bindsym $mod+Print exec "sleep 2 && flameshot gui"
