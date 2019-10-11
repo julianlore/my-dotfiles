@@ -176,7 +176,7 @@ alias gdiff='colordiff -u'
 # bc to always use floating point numbers
 alias bc='bc -l'
 
-alias cleanfox='firefox -private -safe-mode'
+alias cleanfox='firefox-nightly -private -safe-mode'
 
 alias clean='yay -Sc'
 # List network devices
