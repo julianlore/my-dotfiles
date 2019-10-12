@@ -139,6 +139,7 @@ alias e='emacsclient -c -a emacs'
 
 # To quickly edit configs
 alias i3config='ew ~/.config/i3/config'
+alias zathurarc='ew ~/.config/zathura/zathurarc'
 alias bashrc='ew ~/.bashrc'
 alias zshrc='ew ~/.zshrc'
 alias zshrc.local='ew ~/.zshrc.local'

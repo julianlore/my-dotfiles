@@ -1,1 +1,5 @@
 set selection-clipboard clipboard
+map <Right> navigate next
+map <Left> navigate previous
+map <C-Up> zoom in
+map <C-Down> zoom out
