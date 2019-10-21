@@ -248,6 +248,10 @@ exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && telegram-desktop'
 #exec --no-startup-id i3-msg 'workspace 3; exec pcmanfm'
 exec --no-startup-id i3-msg 'workspace 3; exec dolphin'
 
+# Remap caps lock to escape
+exec_always --no-startup-id xmodmap -e "clear lock"
+exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+
 # Turn off screen and lock
 bindsym crtl+Mod1+s exec "xset dpms force off && sleep 1 && i3lock"
 
