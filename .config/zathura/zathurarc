@@ -1,5 +1,7 @@
 set selection-clipboard clipboard
 set page-cache-size 500
+set recolor true
+set adjust-open width
 map <Right> navigate next
 map <Left> navigate previous
 map <C-Up> zoom in
