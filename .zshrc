@@ -137,6 +137,9 @@ alias reboot='systemctl reboot'
 alias ew='emacsclient -t'
 alias e='emacsclient -c -a emacs'
 
+# Temp scratchpad to write stuff
+alias scratch='e ~/scratch.org'
+
 # To quickly edit configs
 alias i3config='ew ~/.config/i3/config'
 alias zathurarc='ew ~/.config/zathura/zathurarc'
