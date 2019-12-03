@@ -192,11 +192,12 @@ bindsym ctrl+Mod1+Right move workspace to output right
 bindsym ctrl+Mod1+Up move workspace to output up
 bindsym ctrl+Mod1+Down move workspace to output down
 #bindsym $mod+c exec pcmanfm
-bindsym $mod+c exec dolphin
+#bindsym $mod+c exec dolphin
 bindsym $mod+b exec firefox-nightly
 bindsym $mod+Shift+b exec chromium
 bindsym $mod+g exec keepassxc
 bindsym $mod+x exec "emacsclient -c -a emacs"
+bindsym $mod+Shift+s exec "emacsclient -c -a emacs ~/scratch.org"
 bindsym $mod+p exec pavucontrol
 bindsym $mod+Shift+v exec vlc
 bindsym $mod+Shift+x exec virtualbox
@@ -246,7 +247,8 @@ exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && telegram-desktop'
 #exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && rambox'
 #exec --no-startup-id i3-msg 'workspace 2; exec sleep 10 && chromium'
 #exec --no-startup-id i3-msg 'workspace 3; exec pcmanfm'
-exec --no-startup-id i3-msg 'workspace 3; exec dolphin'
+#exec --no-startup-id i3-msg 'workspace 3; exec dolphin'
+exec --no-startup-id i3-msg 'workspace 3; exec xfce4-terminal -x tmux new-session -s 1'
 
 # Remap caps lock to escape
 exec_always --no-startup-id xmodmap -e "clear lock"
