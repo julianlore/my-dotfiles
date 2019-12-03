@@ -4,6 +4,3 @@
 [submodule "i3wm-themer"]
 	path = i3wm-themer
 	url = https://github.com/unix121/i3wm-themer.git
-[submodule ".emacs.d"]
-	path = .emacs.d
-	url = https://github.com/julianlore/.emacs.d.git
