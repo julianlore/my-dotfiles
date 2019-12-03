@@ -137,6 +137,8 @@ alias reboot='systemctl reboot'
 alias ew='emacsclient -t'
 alias e='emacsclient -c -a emacs'
 
+alias re='systemctl --user restart emacs'
+
 # Temp scratchpad to write stuff
 alias scratch='e ~/scratch.org'
 
