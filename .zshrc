@@ -149,9 +149,10 @@ alias bashrc='ew ~/.bashrc'
 alias zshrc='ew ~/.zshrc'
 alias zshrc.local='ew ~/.zshrc.local'
 alias zshrclocal='ew ~/.zshrc.local'
-alias .emacs='e ~/.emacs'
-alias .emacs.local='e ~/.emacs.local'
-alias .emacslocal='e ~/.emacs.local'
+alias .emacs='e ~/.emacs.d/init.el'
+alias initel='e ~/.emacs.d/init.el'
+alias .emacs.local='e ~/.emacs.d/.emacs.local'
+alias .emacslocal='e ~/.emacs.d/.emacs.local'
 alias .emacs.d='cd ~/.emacs.d'
 
 # Tungsten is a wolfram cli interpreter
