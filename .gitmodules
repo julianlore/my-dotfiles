@@ -4,9 +4,9 @@
 [submodule "i3wm-themer"]
 	path = i3wm-themer
 	url = https://github.com/unix121/i3wm-themer.git
-[submodule "spacemacs"]
+[submodule ".doom.d"]
+	path = .doom.d
+	url = https://github.com/julianlore/.doom.d.git
+[submodule "doom-emacs"]
 	path = .emacs.d
-	url = https://github.com/syl20bnr/spacemacs.git
-[submodule ".spacemacs.d"]
-	path = .spacemacs.d
-	url = https://github.com/julianlore/.spacemacs.d
+	url = https://github.com/hlissner/doom-emacs.git
