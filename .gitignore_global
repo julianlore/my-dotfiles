@@ -231,6 +231,7 @@ TSWLatexianTemp*
 # Ignore Emacs files (files that end with a tilde)
 *~
 \#*\#
+.*-auto
 .Rhistory
 .RData
 octave-workspace
