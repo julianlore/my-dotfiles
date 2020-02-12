@@ -200,6 +200,7 @@ bindsym $mod+x exec "emacsclient -c -a emacs"
 bindsym $mod+Shift+s exec "emacsclient -c -a emacs ~/scratch.org"
 bindsym $mod+p exec pavucontrol
 bindsym $mod+Shift+v exec vlc
+bindsym $mod+ctrl+Shift+v exec virt-manager
 bindsym $mod+Shift+x exec virtualbox
 bindsym $mod+Shift+m exec lollypop
 bindsym $mod+Shift+d exec discord-canary
@@ -227,7 +228,7 @@ bindsym ctrl+Mod1+t exec xfce4-terminal --drop-down
 # Autostart
 exec nm-applet
 exec dropbox
-exec xfce4-terminal --drop-down -x tmux new-session -s 0
+#exec xfce4-terminal --drop-down -x tmux
 exec flameshot
 #exec feh --bg-scale /home/jl/Downloads/hidden_constellation_by_kpekep-dbkcvjk.png
 exec feh --bg-scale "/home/jl/i3wm-themer/themes/Colors/Colors.png"

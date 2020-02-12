@@ -275,4 +275,6 @@ n ()
 
 }
 
+alias vc='virt-manager'
+
 source ~/.zshrc.local
