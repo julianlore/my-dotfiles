@@ -195,7 +195,7 @@ alias s='source ~/.zshrc'
 # quick exit
 alias x='exit'
 
-alias st='startx'
+alias st='startx ~/.xinitrc'
 alias sn='nvidia-xrun'
 
 # tmux aliases

@@ -7,5 +7,10 @@ source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
-# Automatically start i3 on login to a tty
-exec i3
+# Pass argument to xinitrc to choose de/wm, i3 as default
+session=${1:-i3}
+case $session in
+  i3             ) exec i3;;
+  cinnamon|c|cin ) exec cinnamon;;
+  *              ) exec $1;;
+esac
