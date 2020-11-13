@@ -1,0 +1,2 @@
+if ( begin ( is ( window_class ) "xfreerdp" )) 
+( begin ( undecorate )( geometry "+0+0" ))

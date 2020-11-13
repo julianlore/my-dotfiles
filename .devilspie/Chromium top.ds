@@ -1,0 +1,2 @@
+if ( begin ( is ( window_class ) "Chromium" ))
+   ( begin ( above ))

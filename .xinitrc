@@ -12,5 +12,8 @@ session=${1:-i3}
 case $session in
   i3             ) exec i3;;
   cinnamon|c|cin ) exec cinnamon;;
+  kde|plasma|k|p ) exec startplasma-x11;;
+  b|budgie       ) exec budgie-desktop;;
+  x|xfce         ) exec startxfce4;;
   *              ) exec $1;;
 esac
