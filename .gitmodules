@@ -10,3 +10,6 @@
 [submodule "doom-emacs"]
 	path = .emacs.d
 	url = https://github.com/hlissner/doom-emacs.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/julianlore/ohmyzsh.git

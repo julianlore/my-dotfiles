@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 git submodule update --init --recursive
-if [ -d /usr/share/zsh ] && [ -d /usr/share/oh-my-zsh ]
-then
-    sudo ln -s /usr/share/zsh/plugins/* /usr/share/oh-my-zsh/plugins
-fi
 git config --global core.excludesfile '~/.gitignore'
 
 copymisc () {
@@ -51,4 +47,7 @@ export -f copyhome
 
 mkdir -p Backups
 echo "Backing up home existing files to Backups"
-find . -type f ! \( -name ".gitignore" -o -name "README.md" -o -name "configure.sh" \) ! \( -path "*Misc*" -o -path "*Backups*" -o -path "*.git*" \) -exec bash -c 'copyhome "$0"' {} \;
+# Copy files at maximum depth 1
+find . -maxdepth 1 -type f ! \( -name ".gitignore" -o -name "*.md" -o -name "*.sh" -o -name "*.txt" -o -name "*~*" \) -exec bash -c 'copyhome "$0"' {} \;
+# Otherwise, copy directories
+find . -maxdepth 1 -type d ! \( -name "Misc" -o -name "Backups" \) -exec bash -c 'copyhome "$0"' {} \;
