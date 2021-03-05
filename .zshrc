@@ -97,8 +97,9 @@ setopt autocd
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
+ZSHRC_LOCAL="~/.zshrc.local"
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/jl/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -147,8 +148,8 @@ alias i3config='ew ~/.config/i3/config'
 alias zathurarc='ew ~/.config/zathura/zathurarc'
 alias bashrc='ew ~/.bashrc'
 alias zshrc='ew ~/.zshrc'
-alias zshrc.local='ew ~/.zshrc.local'
-alias zshrclocal='ew ~/.zshrc.local'
+alias zshrc.local='ew $ZSHRC_LOCAL'
+alias zshrclocal='ew $ZSHRC_LOCAL'
 alias .emacs='e ~/.doom.d/config.el'
 alias initel='e ~/.doom.d/init.el'
 alias .emacs.local='e ~/.emacs.d/.emacs.local'
@@ -276,5 +277,6 @@ n ()
 }
 
 alias vc='virt-manager'
-
-source ~/.zshrc.local
+if [ -f "$ZSHRC_LOCAL" ]; then
+    source $ZSHRC_LOCAL
+fi
