@@ -48,6 +48,9 @@ export -f copyhome
 mkdir -p Backups
 echo "Backing up home existing files to Backups"
 # Copy files at maximum depth 1
-find . -maxdepth 1 -type f ! \( -name ".gitignore" -o -name "*.md" -o -name "*.sh" -o -name "*.txt" -o -name "*~*" \) -exec bash -c 'copyhome "$0"' {} \;
+# We specify a min depth of 1 to not include the directory we are searching from
+find . -mindepth 1 -maxdepth 1 -type f ! \( -name ".gitignore" -o -name "*.md" -o -name "*.sh" -o -name "*.txt" -o -name "*~*" \) -exec bash -c 'copyhome "$0"' {} \;
 # Otherwise, copy directories
-find . -maxdepth 1 -type d ! \( -name "Misc" -o -name "Backups" \) -exec bash -c 'copyhome "$0"' {} \;
+find . -mindepth 1 -maxdepth 1 -type d ! \( -name "Misc" -o -name "Backups" -o -name ".git" -o -name ".config" \) -exec bash -c 'copyhome "$0"' {} \;
+# Treat .config separately as we shouldn't overwrite it completely
+find .config -mindepth 1 -maxdepth 1 ! \( -name "~*~" \) -exec bash -c 'copyhome "$0"' {} \;
