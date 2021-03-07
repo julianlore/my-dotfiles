@@ -97,7 +97,7 @@ setopt autocd
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
-ZSHRC_LOCAL="~/.zshrc.local"
+ZSHRC_LOCAL="$HOME/.zshrc.local"
 # The following lines were added by compinstall
 zstyle :compinstall filename '$HOME/.zshrc'
 
