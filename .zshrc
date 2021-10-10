@@ -65,8 +65,8 @@ plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='emacsclient -c -a emacs'
-export VISUAL='emacsclient -c -a emacs'
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -144,12 +144,12 @@ alias re='systemctl --user restart emacs'
 alias scratch='e ~/scratch.org'
 
 # To quickly edit configs
-alias i3config='ew ~/.config/i3/config'
-alias zathurarc='ew ~/.config/zathura/zathurarc'
-alias bashrc='ew ~/.bashrc'
-alias zshrc='ew ~/.zshrc'
-alias zshrc.local='ew $ZSHRC_LOCAL'
-alias zshrclocal='ew $ZSHRC_LOCAL'
+alias i3config='$EDITOR ~/.config/i3/config'
+alias zathurarc='$EDITOR ~/.config/zathura/zathurarc'
+alias bashrc='$EDITOR ~/.bashrc'
+alias zshrc='$EDITOR ~/.zshrc'
+alias zshrc.local='$EDITOR $ZSHRC_LOCAL'
+alias zshrclocal='$EDITOR $ZSHRC_LOCAL'
 alias .emacs='e ~/.doom.d/config.el'
 alias initel='e ~/.doom.d/init.el'
 alias .emacs.local='e ~/.emacs.d/.emacs.local'
@@ -240,6 +240,7 @@ alias ml='matlab -nodesktop -nosplash'
 # Docker aliases
 alias dockerlsi='_ docker images -a --format "{{.Repository}}:{{.Tag}} {{.ID}}"'
 alias dockerlsc='_ docker ps -a -q'
+alias dc='docker-compose'
 
 # Grep aliases
 # Grep only specific file types
