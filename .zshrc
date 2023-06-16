@@ -55,8 +55,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux tmuxinator vi-mode web-search)
-
+plugins=(git sudo alias-tips archlinux zsh-autosuggestions extract tmux tmuxinator vi-mode web-search)
 
 # User configuration
 
@@ -65,8 +64,8 @@ plugins=(git sudo alias-tips archlinux zsh-autosuggestions autojump extract tmux
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -137,6 +136,9 @@ alias reboot='systemctl reboot'
 
 alias ew='emacsclient -t'
 alias e='emacsclient -c -a emacs'
+
+alias nv='nvim'
+alias v='nvim'
 
 alias re='systemctl --user restart emacs'
 
