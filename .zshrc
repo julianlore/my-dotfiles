@@ -250,6 +250,21 @@ alias grephs='grep --include \*.hs'
 alias grepc='grep --include \*.h --include \*.c'
 alias grepcpp='grep --include \*.h --include \*.cpp'
 
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# Source home-manager if present
+if [ -f "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh" ]; then
+    source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
+    XDG_DATA_DIRS+=("$HOME/.nix-profile/share")
+fi
+# Aliases
+alias xup='nix-channel --update && home-manager switch'
+alias nsh='nix-shell'
+alias ngc='nix-collect-garbage'
+alias homenix='$EDITOR ~/.config/home-manager/home.nix'
+
 # nnn cd on quit feature
 # https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.zsh
 n ()
