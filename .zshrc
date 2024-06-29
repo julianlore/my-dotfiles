@@ -1,6 +1,6 @@
 # tmux plugin stuff
-# ZSH_TMUX_AUTOSTART=true
-# ZSH_TMUX_AUTOQUIT=false
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOQUIT=false
 # Oh-my-zsh stuff
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
